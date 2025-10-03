@@ -5,6 +5,6 @@ function mostFrequestElement(arr) {
     let maxCount = 0;
     let mostRrequest = null;
     for(let el of arr) {
-        freqMap[el] = ()
+        //freqMap[el] = ()
     }
 }
