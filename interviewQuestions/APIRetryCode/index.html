@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Retry</title>
+</head>
+
+<body>
+    <h3>API Retry</h3>
+    <h5>Definition</h5>
+    <p>API Retry means automatically re-attempting a failed API request after a short delay — often used to handle
+        temporary network issues, rate limits, or server timeouts.</p>
+    <h5>Why its Needed</h5>
+    <ul>
+        <li>Network instability (e.g., slow or dropped connection)</li>
+        <li>Network instability (e.g., slow or dropped connection)</li>
+        <li>429 Too Many Requests (rate limiting)</li>
+        <li>Idempotent operations (safe to retry GET, not POST unless handled properly)</li>
+    </ul>
+    <h5>Core Logic</h5>
+    <ul>
+        <li>Attempt API call</li>
+        <li>If it fails — wait (with optional exponential backoff)</li>
+        <li>Retry up to a limit</li>
+    </ul>
+</body>
+
+</html>
