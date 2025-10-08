@@ -13,6 +13,7 @@ async function fetchWithRetry(url, retries, delay) {
             console.log(`Attempt ${attempt} failed. Retrying in ${delay}ms...`);
             await new Promise(res => setTimeout(res, delay));// This line of code will peuse the code for the specific delay mili seconds which we have provide.
             delay *= 2;
+            console.log("Delay",delay);
         }
     }
 }
